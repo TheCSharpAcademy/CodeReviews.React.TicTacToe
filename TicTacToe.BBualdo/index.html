@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/dark-theme.css">
+  <link rel="stylesheet" href="styles/light-theme.css">
+  <link rel="stylesheet" href="styles/desktop.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body class="dark-theme">
+  <main>
+    <header>
+      <p class="title">Todo</p>
+      <button class="light-theme-button"></button>
+    </header>
+    <section class="todo-input-container">
+      <div class="todo-input">
+        <input id="add-task" class="checkbox" type="checkbox">
+        <input id="input-add-task" class="todo" placeholder="Create a new todo...">
+      </div>
+    </section>
+    <section class="todo-list-container">
+      <!--Rendered by JS-->
+    </section>
+    <section class="nav-bar-container">
+      <div class="items-left">
+        <p id="items-count"><!--Items left--></p>
+      </div>
+      <div class="categories">
+        <button class="category-button is-toggled">
+          All
+        </button>
+        <button class="category-button">
+          Active
+        </button>
+        <button class="category-button">
+          Completed
+        </button>
+      </div>
+      <div class="clear-completed">
+        <button class="clear-completed-button">
+          Clear Completed
+        </button>
+      </div>
+    </section>
+    <div>
+      <p></p>
+    </div>
+  </main>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/theme-switch.js"></script>
+  <script src="scripts/list-select.js"></script>
+</body>
+</html>
